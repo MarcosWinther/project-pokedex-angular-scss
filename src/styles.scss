@@ -1,13 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
 
 @import url('../src/config-scss/reset.scss');
+@import url('../src/config-scss/animation.scss');
 
 html {
   font-family: 'Roboto', sans-serif;
   background-color: #262835;
 }
+
 main {
   width: 37.5rem;
   margin: 0 auto;
   box-sizing: border-box;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  padding: 1.25rem 0;
+  border-radius: 0.625rem;
+
+  text-decoration: none;
+
+  &__primary {
+    color: #fff;
+    background: #262835;
+  }
+
+  &__secondary {
+    color: #fff;
+    background: #ff5473;
+  }
 }
